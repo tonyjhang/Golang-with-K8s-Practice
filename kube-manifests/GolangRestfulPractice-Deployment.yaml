@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-golang-practice-deployment
+  labels:
+    app: golang-rest-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: golang-rest-test
+  template:
+    metadata:
+      labels:
+        app: golang-rest-test
+    spec:
+      containers:
+        - name: app-tonyjhang-golang-restful-practice
+          image: ffb360724b3a.ngrok.io/tonyjhang/golangrestfulpractice:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8888
