@@ -16,6 +16,7 @@ func (s *RestServer) run() {
 	fmt.Println("Server has init.")
 	r.Run(s.port)
 }
+
 func index(c *gin.Context) {
 	c.JSON(200, "A Golang Rest Practice.")
 }

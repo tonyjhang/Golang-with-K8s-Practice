@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app-tonyjhang-golang-restful-practice
-          image: ffb360724b3a.ngrok.io/tonyjhang/golangrestfulpractice:latest
+          image: e579a075f17e.ngrok.io/tonyjhang/golangrestfulpractice:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8888
