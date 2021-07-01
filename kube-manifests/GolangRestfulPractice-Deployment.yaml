@@ -5,7 +5,7 @@ metadata:
   labels:
     app: golang-rest-test
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: golang-rest-test
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app-tonyjhang-golang-restful-practice
-          image: e579a075f17e.ngrok.io/tonyjhang/golangrestfulpractice:latest
+          image: {your registry}/golangrestfulpractice:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8888
